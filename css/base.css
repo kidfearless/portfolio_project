@@ -55,12 +55,12 @@ label {
 }
 
 .horizontalnav ul a {
-  height: 3em;
+  height: 3.5em;
   background-color: rgba(53, 53, 53, 0.871);
   text-align: center;
-  -webkit-flex-basis: 33.33333%;
-      -ms-flex-preferred-size: 33.33333%;
-          flex-basis: 33.33333%;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
   color: white;
   border-right: rgba(79, 79, 79, 0.965) 1px solid;
 }
@@ -78,6 +78,8 @@ label {
 .horizontalnav ul a li {
   margin-top: 1em;
   margin-bottom: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
 }
 
 .horizontalnav .rainbow {
@@ -237,15 +239,8 @@ footer #icon-pack {
 table {
   margin: auto;
   table-layout: auto;
-  width: auto;
+  width: 100%;
   color: white;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 27px;
-  -webkit-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
-     -moz-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
-       -o-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
-          border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill repeat;
 }
 
 table tbody th {
@@ -262,7 +257,7 @@ table tbody td {
 table tfoot td {
   font-size: 0.7em;
   text-align: right;
-  padding-right: 2%;
+  padding-right: 10%;
 }
 
 @-webkit-keyframes Scroll-Right {
@@ -301,9 +296,32 @@ table tfoot td {
   }
 }
 
+@media only screen and (min-width: 375px) {
+  figure figcaption {
+    font-size: 0.9em;
+  }
+}
+
 @media only screen and (min-width: 400px) {
-  #hours h2 {
-    margin-bottom: 0;
+  table tbody th {
+    font-size: 1.2em;
+  }
+  table tbody td {
+    font-size: 1.2em;
+    text-align: right;
+  }
+  table tfoot td {
+    padding-right: 12%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .horizontalnav ul a {
+    height: 4em;
+  }
+  .horizontalnav ul a li {
+    height: 2em;
+    line-height: 2em;
   }
 }
 
@@ -320,9 +338,6 @@ table tfoot td {
   h2 {
     font-size: 1.6em;
   }
-  table {
-    width: 80%;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -332,8 +347,35 @@ table tfoot td {
 }
 
 @media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 3.2em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
   figure figcaption {
     font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .horizontalnav ul a {
+    height: 6em;
+  }
+  .horizontalnav ul a li {
+    height: 1em;
+    line-height: 1em;
+    font-size: 2em;
+  }
+  table tbody th {
+    font-size: 1.5em;
+  }
+  table tbody td {
+    font-size: 1.5em;
+    text-align: right;
+  }
+  table tfoot td {
+    padding-right: 12%;
   }
 }
 

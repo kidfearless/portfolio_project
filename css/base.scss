@@ -35,9 +35,8 @@ label
 		padding: auto;
 		a
 		{
-			height: 3em;
-			//padding-top: $font-base;
-			//line-height: $font-base;
+			//top + bottom + lineheight
+			height: $font-base * 3 + ($font-base / 2);
 			background-color: $primary-color;
 			@extend %font-style1;
 			text-align: center;
@@ -60,6 +59,8 @@ label
 					top: $font-base;
 					bottom: $font-base;
 				}
+				height: $font-base*1.500;
+				line-height: $font-base*1.500;
 			}
 		}
 	}
@@ -240,16 +241,11 @@ table
 {
 	margin: auto;
 	table-layout: auto;
-	width: auto;
+	width: 100%;
 	color: white;
-	border-color: transparent;
-	border-style: solid;
-	border-width: 27px;
-	border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill repeat;
 
 	tbody
 	{
-
 		th
 		{
 			padding: 1%;
@@ -268,7 +264,7 @@ table
 		{
 			font-size: $font-base * 0.7;
 			text-align: right;
-			padding-right: 2%;
+			padding-right: 10%;
 		}
 	}
 }
