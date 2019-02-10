@@ -19,7 +19,7 @@
 	}
 	figure
 	{
-		width: 80%;
+		width: 100%;
 	}
 	.container
 	{
@@ -44,7 +44,10 @@
 }
 @include screen-media(700px, 0)
 {
-	
+	figure figcaption
+	{
+		font-size: $font-base;
+	}
 }
 @include screen-media(800px, 0)
 {
