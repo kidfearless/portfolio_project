@@ -1,0 +1,349 @@
+h1 {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 5px 5px 15px #333;
+}
+
+label, .horizontalnav ul a, figure figcaption, footer {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.horizontalnav ul a, footer a, footer a:visited {
+  text-decoration: none;
+}
+
+div img {
+  width: 50%;
+}
+
+#menu, #hours {
+  background-color: rgba(187, 187, 187, 0.396);
+}
+
+.wrapper {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.mobile1, .mobile2 {
+  display: none;
+}
+
+label {
+  color: white;
+}
+
+.horizontalnav:hover {
+  position: relative;
+  top: 0;
+}
+
+.horizontalnav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: auto;
+}
+
+.horizontalnav ul a {
+  height: 3em;
+  background-color: rgba(53, 53, 53, 0.871);
+  text-align: center;
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%;
+  color: white;
+  border-right: rgba(79, 79, 79, 0.965) 1px solid;
+}
+
+.horizontalnav ul a:hover {
+  background-color: rgba(79, 79, 79, 0.965);
+}
+
+.horizontalnav ul a:first-of-type {
+  -webkit-flex-shrink: 2;
+      -ms-flex-negative: 2;
+          flex-shrink: 2;
+}
+
+.horizontalnav ul a li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.horizontalnav .rainbow {
+  background: -webkit-linear-gradient(45deg, orange, yellow, green, cyan, blue, violet, yellow);
+  background: -moz-linear-gradient(45deg, orange, yellow, green, cyan, blue, violet, yellow);
+  background: -o-linear-gradient(45deg, orange, yellow, green, cyan, blue, violet, yellow);
+  background: linear-gradient(45deg, orange, yellow, green, cyan, blue, violet, yellow);
+  -webkit-animation: Scroll-Right 10s linear infinite;
+     -moz-animation: Scroll-Right 10s linear infinite;
+       -o-animation: Scroll-Right 10s linear infinite;
+          animation: Scroll-Right 10s linear infinite;
+  position: absolute;
+  width: 500%;
+  height: 2px;
+}
+
+.wrapper {
+  background-image: url("../images/background3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: absolute;
+}
+
+.gap {
+  content: "";
+  border: 3px solid grey;
+  height: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+h1 {
+  color: white;
+  margin: auto;
+  margin-top: 15%;
+  margin-bottom: 20%;
+}
+
+h2 {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-top: 2%;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+figure {
+  margin: auto;
+  margin-bottom: 10%;
+  width: 90%;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure img#shop {
+  -webkit-filter: sepia(40%) grayscale(20%);
+          filter: sepia(40%) grayscale(20%);
+}
+
+figure figcaption {
+  font-size: 0.7em;
+  text-align: right;
+  color: rgba(207, 207, 207, 0.965);
+}
+
+#menu div.row {
+  width: 49%;
+  display: inline-block;
+}
+
+#menu div.row img {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 5px #666;
+     -moz-box-shadow: 0px 0px 5px 5px #666;
+          box-shadow: 0px 0px 5px 5px #666;
+}
+
+#menu div.row img#menu_1 {
+  -webkit-border-top-left-radius: 10px;
+     -moz-border-radius-topleft: 10px;
+          border-top-left-radius: 10px;
+}
+
+#menu div.row img#menu_2 {
+  -webkit-border-bottom-left-radius: 10px;
+     -moz-border-radius-bottomleft: 10px;
+          border-bottom-left-radius: 10px;
+}
+
+#menu div.row img#menu_3 {
+  -webkit-border-top-right-radius: 10px;
+     -moz-border-radius-topright: 10px;
+          border-top-right-radius: 10px;
+}
+
+#menu div.row img#menu_4 {
+  -webkit-border-bottom-right-radius: 10px;
+     -moz-border-radius-bottomright: 10px;
+          border-bottom-right-radius: 10px;
+}
+
+.card {
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  padding: auto;
+  text-align: center;
+  background-color: white;
+  height: 500px;
+}
+
+footer {
+  margin-top: 15%;
+  position: relative;
+  bottom: -1px;
+  background-color: rgba(32, 32, 32, 0.98);
+  width: 100%;
+  text-align: center;
+  color: rgba(181, 181, 181, 0.871);
+  font-size: 0.6em;
+  padding-top: 2%;
+}
+
+footer .row img {
+  width: auto;
+  height: 3em;
+}
+
+footer a, footer a:visited {
+  color: rgba(181, 181, 181, 0.871);
+}
+
+footer div.row {
+  padding: 1%;
+  display: inline-table;
+  width: 10%;
+}
+
+footer #icon-pack {
+  display: block;
+  margin-top: 1.5em;
+}
+
+table {
+  margin: auto;
+  table-layout: auto;
+  width: auto;
+  color: white;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 27px;
+  -webkit-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
+     -moz-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
+       -o-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 repeat;
+          border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill repeat;
+}
+
+table tbody th {
+  padding: 1%;
+  text-align: left;
+  width: 41.66667%;
+}
+
+table tbody td {
+  text-align: center;
+  padding: 1%;
+}
+
+table tfoot td {
+  font-size: 0.7em;
+  text-align: right;
+  padding-right: 2%;
+}
+
+@-webkit-keyframes Scroll-Right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@-moz-keyframes Scroll-Right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@-o-keyframes Scroll-Right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes Scroll-Right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #hours h2 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  figure {
+    width: 80%;
+  }
+  .container {
+    width: 80%;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  table {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #hours h2 {
+    margin-top: 6%;
+  }
+}
+
+/*
+Session 4
+
+	Use figure boxes around main images with captions and alternative text
+	Use CSS styles to position and style figure boxes
+    Apply a transform to an image in some way
+
+Session 5
+
+    Utilize media queries to define styles for mobile, tablet and desktop
+    Align flexboxes using flexbox layouts
+
+Session 7
+
+    Group form elements into appropriate fieldsets with legends
+*/

@@ -1,0 +1,29 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_classes.scss";
+
+#contact
+{
+	@extend %glass;
+	padding-bottom: 5%;
+	form
+	{
+		label
+		{
+			text-align: center;
+			margin: auto;
+			margin-bottom: 1%;
+			display: block;
+		}
+		input, select
+		{
+			margin: auto;
+			margin-top: 2%;
+			margin-bottom: 5%;
+			display: block;
+			border-radius: 5%;
+			box-shadow: 0 0 15px 5px #333;
+		}
+
+	}
+}

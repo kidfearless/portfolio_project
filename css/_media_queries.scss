@@ -1,0 +1,60 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+
+
+
+@include screen-media(400px, 0)
+{
+	#hours h2
+	{
+		margin-bottom: 0;
+	}
+}
+@include screen-media(500px, 0)
+{
+	h1
+	{
+		font-size: ($font-base * 3) * 0.8;
+	}
+	figure
+	{
+		width: 80%;
+	}
+	.container
+	{
+		width: 80%;
+	}
+	h2
+	{
+		font-size: ($font-base * 2) *0.8;
+	}
+	table
+	{
+		width: 80%;
+	}
+}
+
+@include screen-media(600px, 0)
+{
+	#hours h2
+	{
+		margin-top: 6%;
+	}
+}
+@include screen-media(700px, 0)
+{
+	
+}
+@include screen-media(800px, 0)
+{
+	
+}
+@include screen-media(900px, 0)
+{
+	
+}
+@include screen-media(1000px, 0)
+{
+	
+}

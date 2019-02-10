@@ -1,0 +1,36 @@
+@import "_variables.scss";
+
+
+@mixin Rainbow()
+{
+	background: linear-gradient(45deg, $rainbow-color);
+	animation: Scroll-Right 10s linear infinite;
+	position: absolute;
+}
+
+@mixin SetBackground($url)
+{
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+@mixin screen-media($minWidth, $maxWidth)
+{
+	@if $minWidth > 0px
+	{
+		@media only screen and (min-width: $minWidth)
+		{
+			@content;
+		}
+	}
+	@else
+	{
+		@media only screen and (max-width: $maxWidth)
+		{
+			@content;
+		}
+	}
+}

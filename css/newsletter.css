@@ -1,0 +1,26 @@
+#newsLetter {
+  background-color: rgba(187, 187, 187, 0.396);
+}
+
+#newsLetter {
+  padding-bottom: 5%;
+}
+
+#newsLetter form label {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1%;
+  display: block;
+}
+
+#newsLetter form input {
+  margin: auto;
+  margin-bottom: 5%;
+  display: block;
+  -webkit-border-radius: 5%;
+     -moz-border-radius: 5%;
+          border-radius: 5%;
+  -webkit-box-shadow: 0 0 15px 5px #333;
+     -moz-box-shadow: 0 0 15px 5px #333;
+          box-shadow: 0 0 15px 5px #333;
+}

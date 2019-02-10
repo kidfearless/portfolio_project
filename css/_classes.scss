@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+%h2base
+{
+	width: 80%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	font-size: $font-base * 1.5;
+	text-shadow: 5px 5px 15px #333;
+}
+%h1base
+{
+	width: 80%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	font-size: $font-base * 3;
+	text-shadow: 5px 5px 15px #333;
+}
+
+%font-style1
+{
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: $font-base;
+}
+
+%font-style2
+{
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: $font-base * 1.5;
+}
+
+%links
+{
+	text-decoration: none;
+}
+
+%images
+{
+	width: 50%;
+}
+
+%glass
+{
+	background-color: $glass-color;
+}

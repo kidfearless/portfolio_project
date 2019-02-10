@@ -1,0 +1,306 @@
+
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_classes.scss";
+
+.wrapper
+{
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+
+.mobile1, .mobile2
+{
+	display: none;
+}
+
+label
+{
+	@extend %font-style1;
+	color: white;
+}
+
+.horizontalnav
+{
+	&:hover
+	{
+		position: relative;
+		top: 0;
+	}
+	ul
+	{
+		display: flex;
+		padding: auto;
+		a
+		{
+			height: 3em;
+			//padding-top: $font-base;
+			//line-height: $font-base;
+			background-color: $primary-color;
+			@extend %font-style1;
+			text-align: center;
+			flex-basis: $nav-width;
+			color: white;
+			@extend %links;
+			border-right: $primary-color-hover 1px solid;
+			&:hover
+			{
+				background-color: $primary-color-hover;
+			}
+			&:first-of-type
+			{
+				flex-shrink: 2;
+			}
+			li
+			{
+				margin:
+				{
+					top: $font-base;
+					bottom: $font-base;
+				}
+			}
+		}
+	}
+	.rainbow
+	{
+		@include Rainbow();
+		width:500%;
+		height: 2px;
+	}
+	
+}
+
+.wrapper
+{
+	@include SetBackground("../images/background3.jpg");
+	position: absolute;
+}
+
+.gap
+{
+	content: "";
+	border: 3px solid grey;
+	height: 0px;
+}
+
+.container
+{
+	width: 90%;
+	margin: auto;
+	padding-bottom: 5%;
+}
+
+h1
+{
+	@extend %h1base;
+	color: white;
+	margin:auto;
+	margin-top: 15%;
+	margin-bottom: 20%;
+}
+
+h2
+{
+	margin:
+	{
+		bottom: 5%;
+		top: 5%;
+	}
+	padding-top: 2%;
+	text-align: center;
+	font-size: $font-base * 2;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+figure
+{
+	margin: auto;
+	margin-bottom: 10%;
+	width: 90%;
+	img
+	{
+		width: 100%;
+		&#shop
+		{
+			filter: sepia(40%) grayscale(20%);
+		}
+	}
+	figcaption
+	{
+		@extend %font-style1;
+		font-size: $font-base * 0.70;
+		text-align: right;
+		color: lighten($primary-color-hover, 50%);
+	}
+}
+
+div
+{
+	img
+	{
+		@extend %images;
+	}
+}
+
+#menu
+{
+	@extend %glass;
+	div.row
+	{
+		width: 49%;
+		display: inline-block;
+		img
+		{
+			width: 100%;
+			box-shadow: 0px 0px 5px 5px #666;
+			&#menu_1
+			{
+				border-top-left-radius: 10px;
+			}
+			&#menu_2
+			{
+				border-bottom-left-radius: 10px;
+			}
+			&#menu_3
+			{
+				border-top-right-radius: 10px;
+			}
+			&#menu_4
+			{
+				border-bottom-right-radius: 10px;
+			}
+		}
+	}
+}
+
+
+
+.card
+{
+	width: 100%;
+	margin: auto;
+	margin-top: 5%;
+	padding: auto;
+	text-align: center;
+	background-color: white;
+	height: 500px;
+}
+
+#hours
+{
+	@extend %glass;
+}
+
+footer
+{
+	$footer-text: lighten($primary-color, 50%);
+	margin-top: 15%;
+	position: relative;
+	bottom: -1px;
+	background-color: $secondary-color;
+	width: 100%;
+	text-align: center;
+	color: $footer-text;
+	@extend %font-style1;
+	font-size: $font-base * 0.6;
+	padding-top: 2%;
+	.row
+	{
+		img
+		{
+			width:auto;
+			height: $font-base*3;
+		}
+	}
+	a, a:visited
+	{
+		@extend %links;
+		color: $footer-text;
+	}
+	div
+	{
+		&.row
+		{
+			padding: 1%;
+			display: inline-table;
+			width: 10%;
+		}
+	}
+	#icon-pack
+	{
+		display: block;
+		margin-top: $font-base*1.5;
+	}
+}
+
+table
+{
+	margin: auto;
+	table-layout: auto;
+	width: auto;
+	color: white;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 27px;
+	border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill repeat;
+
+	tbody
+	{
+
+		th
+		{
+			padding: 1%;
+			text-align: left;
+			width: $grid-width*5;
+		}
+		td 
+		{
+			text-align: center;
+			padding: 1%;
+		}
+	}
+	tfoot
+	{
+		td
+		{
+			font-size: $font-base * 0.7;
+			text-align: right;
+			padding-right: 2%;
+		}
+	}
+}
+
+
+@keyframes Scroll-Right
+{
+	0%
+	{
+		left: 0
+	}
+	100%
+	{
+		left: -$rainbow-width*0.8;
+	}
+}
+
+
+@import "_media_queries.scss";
+/*
+Session 4
+
+	Use figure boxes around main images with captions and alternative text
+	Use CSS styles to position and style figure boxes
+    Apply a transform to an image in some way
+
+Session 5
+
+    Utilize media queries to define styles for mobile, tablet and desktop
+    Align flexboxes using flexbox layouts
+
+Session 7
+
+    Group form elements into appropriate fieldsets with legends
+*/
