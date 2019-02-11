@@ -25,7 +25,7 @@ div img {
   background-color: rgba(187, 187, 187, 0.396);
 }
 
-.row, #menu div {
+.row {
   width: 49%;
   display: inline-block;
 }
@@ -46,12 +46,6 @@ div img {
   content: "";
   border: 3px solid grey;
   height: 0px;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  padding-bottom: 5%;
 }
 
 .wrapper {
@@ -203,6 +197,12 @@ figure figcaption {
           border-bottom-right-radius: 10px;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
 .card {
   width: 100%;
   margin: auto;
@@ -225,7 +225,7 @@ footer {
   padding-top: 2%;
 }
 
-footer .row img, footer #menu div img, #menu footer div img {
+footer .row img {
   width: auto;
   height: 3em;
 }
@@ -234,7 +234,7 @@ footer a, footer a:visited {
   color: rgba(181, 181, 181, 0.871);
 }
 
-footer div.row, footer #menu div, #menu footer div {
+footer div.row {
   padding: 1%;
   display: inline-table;
   width: 10%;
