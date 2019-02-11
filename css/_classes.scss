@@ -47,3 +47,30 @@
 {
 	background-color: $glass-color;
 }
+
+.row
+{
+	width: 49%;
+	display: inline-block;
+}
+
+
+.wrapper
+{
+	@include SetBackground("../images/background3.jpg");
+	position: absolute;
+}
+
+.gap
+{
+	content: "";
+	border: 3px solid grey;
+	height: 0px;
+}
+
+.container
+{
+	width: 90%;
+	margin: auto;
+	padding-bottom: 5%;
+}

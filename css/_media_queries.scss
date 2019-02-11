@@ -29,7 +29,8 @@
 		{
 			td
 			{
-				padding-right: 12%;
+				font-size: $font-base * 0.8;
+				padding-right: 0;
 			}
 		}
 	}
@@ -73,6 +74,15 @@
 	{
 		font-size: ($font-base * 2) *0.8;
 	}
+	fieldset
+	{
+		div:nth-of-type(1), div:nth-of-type(2)
+		{
+			//Error: You may not @extend an outer selector from within @media.
+			width: 49%;
+			display: inline-block;
+		} 
+	}
 }
 
 @include screen-media(600px, 0)
@@ -96,6 +106,33 @@
 	{
 		font-size: $font-base;
 	}
+	table
+	{
+		width: 70%;
+		tbody
+		{
+			th
+			{
+				font-size: $font-base*1.5;
+			}
+			td
+			{
+				font-size: $font-base*1.5;
+				text-align: right;
+			}
+		}
+	}
+}
+@include screen-media(800px, 0)
+{
+	h1
+	{
+		font-size: $font-base * 3.5;
+	}
+	h2 
+	{
+		font-size: $font-base * 2.5;
+	}
 }
 @include screen-media(900px, 0)
 {
@@ -117,6 +154,7 @@
 	}
 	table
 	{
+		width: 50%;
 		tbody
 		{
 			th
@@ -131,10 +169,34 @@
 		}
 		tfoot
 		{
-			td
+			td 
 			{
-				padding-right: 12%;
+				font-size: $font-base;
 			}
+		}
+	}
+}
+
+@include screen-media(900px, 0)
+{
+	fieldset
+	{
+		div:nth-of-type(1), div:nth-of-type(2), div:nth-of-type(3)
+		{
+			display: inline-block;
+			width: (100% / 3) - 1%;
+		}
+	}
+}
+
+@for $i from 1px through 100px
+{
+	$i: $i * 100;
+	@include screen-media($i, 0)
+	{
+		h1:after
+		{
+			content: "";
 		}
 	}
 }

@@ -34,3 +34,11 @@
 		}
 	}
 }
+
+@mixin screen-media1($minWidth)
+{
+	@media only screen and (min-width: $minWidth)
+	{
+		@content;
+	}
+}

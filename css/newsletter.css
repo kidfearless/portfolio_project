@@ -1,19 +1,64 @@
+#newsLetter form fieldset {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+}
+
 #newsLetter {
   background-color: rgba(187, 187, 187, 0.396);
+}
+
+.row {
+  width: 49%;
+  display: inline-block;
+}
+
+.wrapper {
+  background-image: url("../images/background3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: absolute;
+}
+
+.gap {
+  content: "";
+  border: 3px solid grey;
+  height: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
 }
 
 #newsLetter {
   padding-bottom: 5%;
 }
 
-#newsLetter form label {
+#newsLetter form fieldset {
+  background-color: rgba(60, 60, 60, 0.396);
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.396);
+}
+
+#newsLetter form fieldset label {
   text-align: center;
   margin: auto;
   margin-bottom: 1%;
   display: block;
 }
 
-#newsLetter form input {
+#newsLetter form fieldset input {
   margin: auto;
   margin-bottom: 5%;
   display: block;
@@ -23,4 +68,24 @@
   -webkit-box-shadow: 0 0 15px 5px #333;
      -moz-box-shadow: 0 0 15px 5px #333;
           box-shadow: 0 0 15px 5px #333;
+}
+
+#newsLetter form fieldset legend {
+  border: 1px solid rgba(255, 255, 255, 0.396);
+  padding: 1%;
+}
+
+#newsLetter form div {
+  text-align: center;
+}
+
+#newsLetter form div #submitButton {
+  margin: auto;
+  padding: 5% 15%;
+  background-color: rgba(53, 53, 53, 0.871);
+  color: white;
+}
+
+#newsLetter form div #submitButton:hover {
+  background-color: rgba(79, 79, 79, 0.965);
 }

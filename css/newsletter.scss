@@ -9,21 +9,55 @@
 	padding-bottom: 5%;
 	form
 	{
-		label
+		fieldset
+		{
+			background-color: darken($glass-color, 50%);
+			color:white;
+			text-align: center;
+			margin:auto;
+			margin-left: 10%;
+			margin-right: 10%;
+
+			border: 1px solid lighten($glass-color, 30%);
+			@extend %font-style1;
+			label
+			{
+				text-align: center;
+				margin: auto;
+				margin-bottom: 1%;
+
+				display: block;
+			}
+			input
+			{
+				margin: auto;
+				margin-bottom: 5%;
+				display: block;
+				border-radius: 5%;
+				box-shadow: 0 0 15px 5px #333;
+			}
+			legend
+			{
+				border: 1px solid lighten($glass-color, 30%);
+				//margin-bottom: $font-base;
+				padding: 1%;
+			}
+		}
+		div
 		{
 			text-align: center;
-			margin: auto;
-			margin-bottom: 1%;
-
-			display: block;
-		}
-		input
-		{
-			margin: auto;
-			margin-bottom: 5%;
-			display: block;
-			border-radius: 5%;
-			box-shadow: 0 0 15px 5px #333;
+			#submitButton
+			{
+				margin: auto;
+				padding: 5% 15%;
+				background-color: $primary-color;
+				//background-color: opacify(darken($glass-color, 50%), 0.5) ;
+				color: white;
+				&:hover
+				{
+					background-color: $primary-color-hover;
+				}
+			}
 		}
 	}
 }
