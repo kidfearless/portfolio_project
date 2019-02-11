@@ -50,7 +50,7 @@
 			{
 				margin: auto;
 				padding: 5% 15%;
-				background-color: $primary-color;
+				background-color: opacify($primary-color, 1);
 				//background-color: opacify(darken($glass-color, 50%), 0.5) ;
 				color: white;
 				&:hover
