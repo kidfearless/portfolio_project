@@ -7,7 +7,7 @@ h1 {
   text-shadow: 5px 5px 15px #333;
 }
 
-label, .horizontalnav ul a, figure figcaption, footer {
+label, .horizontalnav ul a, figure figcaption, footer, form fieldset {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-size: 1em;
@@ -21,7 +21,7 @@ div img {
   width: 50%;
 }
 
-#menu, #hours {
+#menu, #hours, #newsLetter, #contact {
   background-color: rgba(187, 187, 187, 0.396);
 }
 
@@ -267,6 +267,66 @@ table tfoot td {
   font-size: 0.7em;
   text-align: right;
   padding-right: 10%;
+}
+
+#newsLetter {
+  padding-bottom: 5%;
+}
+
+form fieldset {
+  background-color: rgba(60, 60, 60, 0.396);
+  color: white;
+  text-align: center;
+  margin: 10%;
+  padding-bottom: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.396);
+}
+
+form fieldset label {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1%;
+  display: block;
+}
+
+form fieldset input {
+  margin: auto;
+  margin-bottom: 10%;
+  display: block;
+  -webkit-border-radius: 5%;
+     -moz-border-radius: 5%;
+          border-radius: 5%;
+  -webkit-box-shadow: 0 0 10px 2px #333;
+     -moz-box-shadow: 0 0 10px 2px #333;
+          box-shadow: 0 0 10px 2px #333;
+  height: 1.5em;
+}
+
+form fieldset legend {
+  border: 1px solid rgba(255, 255, 255, 0.396);
+  margin: auto;
+  margin-bottom: 10%;
+  padding: 1%;
+  text-shadow: 1px 1px 1px #222;
+}
+
+form div {
+  text-align: center;
+}
+
+form div #submitButton {
+  margin: auto;
+  padding: 5% 15%;
+  background-color: #353535;
+  color: white;
+}
+
+form div #submitButton:hover {
+  background-color: rgba(79, 79, 79, 0.965);
+}
+
+#contact {
+  padding-bottom: 5%;
 }
 
 @-webkit-keyframes Scroll-Right {
