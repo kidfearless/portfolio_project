@@ -39,9 +39,8 @@
   background-color: rgba(60, 60, 60, 0.396);
   color: white;
   text-align: center;
-  margin: auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 10%;
+  padding-bottom: 5%;
   border: 1px solid rgba(255, 255, 255, 0.396);
 }
 
@@ -54,19 +53,23 @@
 
 #newsLetter form fieldset input {
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: block;
   -webkit-border-radius: 5%;
      -moz-border-radius: 5%;
           border-radius: 5%;
-  -webkit-box-shadow: 0 0 15px 5px #333;
-     -moz-box-shadow: 0 0 15px 5px #333;
-          box-shadow: 0 0 15px 5px #333;
+  -webkit-box-shadow: 0 0 10px 2px #333;
+     -moz-box-shadow: 0 0 10px 2px #333;
+          box-shadow: 0 0 10px 2px #333;
+  height: 1.5em;
 }
 
 #newsLetter form fieldset legend {
   border: 1px solid rgba(255, 255, 255, 0.396);
+  margin: auto;
+  margin-bottom: 10%;
   padding: 1%;
+  text-shadow: 1px 1px 1px #222;
 }
 
 #newsLetter form div {

@@ -14,9 +14,9 @@
 			background-color: darken($glass-color, 50%);
 			color:white;
 			text-align: center;
-			margin:auto;
-			margin-left: 10%;
-			margin-right: 10%;
+			margin: 10%;
+			padding-bottom: 5%;
+
 
 			border: 1px solid lighten($glass-color, 30%);
 			@extend %font-style1;
@@ -31,16 +31,19 @@
 			input
 			{
 				margin: auto;
-				margin-bottom: 5%;
+				margin-bottom: 10%;
 				display: block;
 				border-radius: 5%;
-				box-shadow: 0 0 15px 5px #333;
+				box-shadow: 0 0 10px 2px #333;
+				height: $font-base*1.5;
 			}
 			legend
 			{
 				border: 1px solid lighten($glass-color, 30%);
-				//margin-bottom: $font-base;
+				margin: auto;
+				margin-bottom: 10%;
 				padding: 1%;
+				text-shadow: 1px 1px 1px #222;
 			}
 		}
 		div
