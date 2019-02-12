@@ -72,11 +72,6 @@ label {
   color: white;
 }
 
-.horizontalnav:hover {
-  position: relative;
-  top: 0;
-}
-
 .horizontalnav ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,6 +90,10 @@ label {
           flex-basis: 25%;
   color: white;
   border-right: rgba(79, 79, 79, 0.965) 1px solid;
+  -webkit-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 
 .horizontalnav ul a:hover {
@@ -293,13 +292,18 @@ form fieldset input {
   margin: auto;
   margin-bottom: 10%;
   display: block;
-  -webkit-border-radius: 5%;
-     -moz-border-radius: 5%;
-          border-radius: 5%;
   -webkit-box-shadow: 0 0 10px 2px #333;
      -moz-box-shadow: 0 0 10px 2px #333;
           box-shadow: 0 0 10px 2px #333;
   height: 1.5em;
+  background-color: #f1f1f1;
+  border: none;
+  -webkit-border-radius: 24px;
+     -moz-border-radius: 24px;
+          border-radius: 24px;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
 }
 
 form fieldset legend {
@@ -319,10 +323,14 @@ form div #submitButton {
   padding: 5% 15%;
   background-color: #353535;
   color: white;
+  -webkit-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 
 form div #submitButton:hover {
-  background-color: rgba(79, 79, 79, 0.965);
+  background-color: #1c1c1c;
 }
 
 #contact {
@@ -400,7 +408,7 @@ form div #submitButton:hover {
     font-size: 2.4em;
   }
   figure {
-    width: 100%;
+    width: 80%;
   }
   .container {
     width: 80%;
@@ -1083,18 +1091,33 @@ form div #submitButton:hover {
 }
 
 /*
+provide a way for interested users to sign-up for your e-newsletter.
+
+Following are the specific page functional requirements:
+
+    Main page with description of your business with its products and/or services
+    Contact Us page containing web form with a dropdown of reason for contacting (comment, question, complaining, etc.), first name, last name, email address, text area and any other fields you feel are appropriate; utilize required and data validation as necessary.
+	Link from your portfolio page to your new business page.
+	
+
 Session 4
 
-	Use figure boxes around main images with captions and alternative text
-	Use CSS styles to position and style figure boxes
-    Apply a transform to an image in some way
+    Use figure boxes around main images with captions and alternative text
+    Add at least one border to a main image and/or text container
+    Use a border image or border with rounded corners
+	Apply a transform to an image in some way
+	
+Session 6
 
-Session 5
-
-    Utilize media queries to define styles for mobile, tablet and desktop
-    Align flexboxes using flexbox layouts
+    Utilize an HTML table perhaps to market your products and/or services.
+    Style your HTML table using th elements, row groups (thead, tfoot, tbody), and colgroups
+    Use rowspans and colspans where appropriate for you content and add a table caption
 
 Session 7
+    Add the attached javascript file "port_formsubmit.js" to your business project and reference it in the pages with your forms
 
-    Group form elements into appropriate fieldsets with legends
+Session 8
+
+    Style and apply a hover transition over your web page navigation and/or anywhere else you think might be cool
+    Utilize an animation (i.e. keyframes) on your site in a unique, tasteful, innovative way (no spinning "ceiling dances", bouncing balls, or jumping foxes, bats, or butterflies ;))
 */

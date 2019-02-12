@@ -38,7 +38,7 @@
 			<div>
 				<h1>Modern Internet Cafe</h1>
 			</div>
-			<div id="contact">
+			<section id="contact">
 				<h2>Contact Us</h2>
 				<form action="http://www.example.com/portfolio" method="POST">
 					<fieldset>
@@ -46,43 +46,45 @@
 							<label for="firstName">First Name:</label>
 							<br />
 							<input type="text" id="firstName" name="contact_first_name" placeholder="John">
-					</div>
-					<div>
-						<label for="lastName">Last Name:</label>
-						<br />
-						<input type="text" id="lastName" name="contact_last_name" placeholder="Doe">
-					</div>
-					<div>
-						<label for="email">Email Address:</label>
-						<br />
-						<input type="text" id="email" name="contact_email" value="@gmail.com">
-					</div>
-					<div>
-						<label for="phone">Phone Number:</label>
-						<br />
-						<input type="tel" id="phone" name="contact_phone" placeholder="(208) 555-1234"
-						pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
-					</div>
-					<div>
-						<label for="email">Reason for contact:</label>
-						<br />
-						<select name="contact_reason">
-							<option value="Request">Request</option>
-							<option value="Complement">Complement</option>
-							<option value="Complaint">Complaint</option>
-							<option value="Question">Question</option>
-						</select>
-					</div>
-				</fieldset>
+						</div>
+						<div>
+							<label for="lastName">Last Name:</label>
+							<br />
+							<input type="text" id="lastName" name="contact_last_name" placeholder="Doe">
+						</div>
+						<div>
+							<label for="email">Email Address:</label>
+							<br />
+							<input type="email" id="email" name="contact_email" value="@gmail.com">
+						</div>
+						<div>
+							<label for="phone">Phone Number:</label>
+							<br />
+							<input type="tel" id="phone" name="contact_phone" placeholder="(208) 555-1234"
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+						</div>
+						<div>
+							<label for="reason">Reason for contact:</label>
+							<br />
+							<select name="contact_reason" id="reason">
+								<option value="Request">Request</option>
+								<option value="Complement">Complement</option>
+								<option value="Complaint">Complaint</option>
+								<option value="Question">Question</option>
+							</select>
+						</div>
+					</fieldset>
 					<div>
 						<label for="contact_sat">How Satisfied Were You With Your Visit:</label>
 						<br />
 						<input type="range" name="contact_sat" min="1" max="5" />
 					</div>
 					<br />
-					<div><input type="submit" value="Submit" name="contact_submit" /></div>
+					<div>
+						<input type="submit" value="Submit" name="contact_submit" />
+					</div>
 				</form>
-			</div>
+			</section>
 			<footer>
 
 				<div class="row">
