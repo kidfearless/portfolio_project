@@ -185,7 +185,7 @@ article p {
   margin: auto;
   padding: 5% 10%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   text-shadow: 5px 5px 15px #111;
   font-family: 'Lato', sans-serif;
 }
@@ -465,6 +465,9 @@ form div input[type="submit"]:hover {
   #hours h2 {
     margin-top: 6%;
   }
+  article p {
+    font-size: 1.1em;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -496,6 +499,9 @@ form div input[type="submit"]:hover {
   h2 {
     font-size: 2.5em;
   }
+  article p {
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -520,9 +526,6 @@ form div input[type="submit"]:hover {
   table tfoot td {
     font-size: 1em;
   }
-}
-
-@media only screen and (min-width: 900px) {
   #newsLetter fieldset div {
     width: 24%;
     display: inline-block;
@@ -535,6 +538,9 @@ form div input[type="submit"]:hover {
   }
   form div input[type="submit"] {
     padding: 2% 4%;
+    font-size: 1.5em;
+  }
+  article p {
     font-size: 1.5em;
   }
 }
