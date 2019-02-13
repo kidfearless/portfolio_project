@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Modern Internet Café</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
@@ -25,7 +25,7 @@
 							<li>Newsletter</li>
 						</a>
 						<a href="contact.html">
-							<li>Contact<div class="mobile1">Us</div></li>
+							<li>Contact</li>
 						</a>
 					</ul>
 					<div class="rainbow"></div>
@@ -42,23 +42,23 @@
 						<div>
 							<label for="firstName">First Name:</label>
 							<br />
-							<input type="text" id="firstName" name="contact_first_name" placeholder="John">
+							<input type="text" id="firstName" name="contact_first_name" placeholder="John" required />
 						</div>
 						<div>
 							<label for="lastName">Last Name:</label>
 							<br />
-							<input type="text" id="lastName" name="contact_last_name" placeholder="Doe">
+							<input type="text" id="lastName" name="contact_last_name" placeholder="Doe" required />
 						</div>
 						<div>
 							<label for="email">Email Address:</label>
 							<br />
-							<input type="email" id="email" name="contact_email" value="@gmail.com">
+							<input type="email" id="email" name="contact_email" value="@gmail.com" required />
 						</div>
 						<div>
 							<label for="phone">Phone Number:</label>
 							<br />
 							<input type="tel" id="phone" name="contact_phone" placeholder="(208) 555-1234"
-							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
 						</div>
 					</fieldset>
 					<fieldset id="experienceField">
@@ -66,7 +66,7 @@
 						<div>
 							<label for="reason">Reason for contact:</label>
 							<br />
-							<select name="contact_reason" id="reason">
+							<select name="contact_reason" id="reason" required>
 								<option value="Request">Request</option>
 								<option value="Complement">Complement</option>
 								<option value="Complaint">Complaint</option>
@@ -91,53 +91,31 @@
 				</form>
 			</section>
 			<footer>
-
-				<div class="row">
-					<a href="tel:+12085554567">
-						<!-- <p>Telephone:</p> -->
-						<img src="images/phone.png" alt="" />
-						<br class="mobile1" />
-					</a>
-				</div>
-
-
-				<div class="row">
-					<a href="mailto:website@example.com">
-						<!-- <p>Email:</p> -->
-						<img src="images/letter.png" />
-						<br class="mobile1" />
-					</a>
-				</div>
-
-
-
-				<div class="row">
-					<a href="https://wwww.facebook.com/" target="_blank">
-						<!-- <p>Facebook:</p> -->
-						<img src="images/facebook.png" alt="facebook" />
-						<br class="mobile1" />
-					</a>
-				</div>
-
-
-				<div class="row">
-					<a href="https://www.twitter.com/" target="_blank">
-						<!-- <p>Twitter:</p> -->
-						<img src="images/twitter.png" alt="twitter" />
-						<br class="mobile1" />
-					</a>
-				</div>
-
-				<br />
-
-				<a id="icon-pack" href="https://icons8.com" target="_blank">Icon pack by Icons8</a>
+					<div class="row">
+						<a href="tel:+12085554567">
+							<img src="images/phone.png" alt="phone" />
+						</a>
+					</div>
+					<div class="row">
+						<a href="mailto:website@example.com">
+							<img src="images/letter.png" alt="mail" />
+						</a>
+					</div>	
+					<div class="row">
+						<a href="https://wwww.facebook.com/" target="_blank">
+							<img src="images/facebook.png" alt="facebook" />
+						</a>
+					</div>
+					<div class="row">
+						<a href="https://www.twitter.com/" target="_blank">
+							<img src="images/twitter.png" alt="twitter" />
+						</a>
+					</div>
+					<br />
+					<a id="icon-pack" href="https://icons8.com" target="_blank">Icon pack by Icons8</a>
 			</footer>
 		</div>
 	</div>
 </body>
 
 </html>
-
-<!-- Contact Us page containing web form with a dropdown of reason for contacting (comment, question, complaining, etc.), 
-	 first name, last name, email address, text area and any other fields you feel are appropriate;
-	 utilize required and data validation as necessary. -->
