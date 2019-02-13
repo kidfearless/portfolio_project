@@ -76,12 +76,14 @@
 	}
 	fieldset
 	{
-		div:nth-of-type(1), div:nth-of-type(2)
+		#newsLetter
 		{
-			//Error: You may not @extend an outer selector from within @media.
-			width: 49%;
-			display: inline-block;
-		} 
+			div:nth-of-type(1), div:nth-of-type(2)
+			{
+				width: 49%;
+				display: inline-block;
+			}
+		}
 	}
 }
 
@@ -179,12 +181,32 @@
 
 @include screen-media(900px, 0)
 {
-	fieldset
+	#newsLetter
 	{
-		div:nth-of-type(1), div:nth-of-type(2), div:nth-of-type(3)
+		fieldset
 		{
-			display: inline-block;
-			width: (100% / 3) - 1%;
+			div
+			{
+				width: (100% / 4) - 1%;
+				
+				display: inline-block;
+				input
+				{					
+					width: 70%;
+					&[type="submit"]
+					{
+						width: 20%;
+					}
+				}
+			}
+		}
+	}
+	form div
+	{
+		input[type="submit"]
+		{
+			padding: 2% 4%;
+			font-size: $font-base * 1.5;
 		}
 	}
 }

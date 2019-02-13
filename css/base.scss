@@ -34,12 +34,6 @@ label
 
 .horizontalnav
 {
-	
-	//&:hover
-	//{
-	//	position: relative;
-	//	top: 0;
-	//}
 	ul
 	{
 		display: flex;
@@ -91,7 +85,7 @@ h1
 	color: white;
 	margin:auto;
 	margin-top: 15%;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 
 
@@ -116,18 +110,43 @@ figure
 	width: 100%;
 	img
 	{
+		
 		width: 100%;
 		&#shop
 		{
+			padding: 30px;
 			filter: sepia(40%) grayscale(20%);
+			transform: scaleY(0.8);
 		}
 	}
 	figcaption
 	{
 		@extend %font-style1;
+		border: 10px solid transparent;
+		border-image: url(../images/border2.png) 30 stretch;
 		font-size: $font-base * 0.70;
-		text-align: right;
+		text-align: center;
 		color: lighten($primary-color-hover, 50%);
+		margin-top: -$font-base * 9;
+		margin-left: 95%;
+		width: 4%;
+	}
+}
+
+article
+{
+	p
+	{
+		
+		@extend %glass;
+		color: white;
+		width: 80%;
+		margin: auto;
+		padding: 5% 10%;
+		text-align: center;
+		font-size: $font-base * 1.5;
+		text-shadow: 5px 5px 15px #111;
+		font-family: 'Lato', sans-serif;
 	}
 }
 
@@ -239,7 +258,6 @@ table
 	table-layout: auto;
 	width: 100%;
 	color: white;
-
 	tbody
 	{
 		th
@@ -247,11 +265,13 @@ table
 			padding: 1%;
 			text-align: left;
 			width: $grid-width*5;
+			border: 1px solid rgba(255, 255, 255, 0.9);
 		}
 		td 
 		{
 			text-align: center;
 			padding: 1%;
+			border: 1px solid rgba(255, 255, 255, 0.9);
 		}
 	}
 	tfoot
@@ -261,6 +281,8 @@ table
 			font-size: $font-base * 0.7;
 			text-align: right;
 			padding-right: 10%;
+			border: none;
+			border-collapse: collapse;
 		}
 	}
 }
@@ -279,7 +301,8 @@ form
 		color:white;
 		text-align: center;
 		margin: 10%;
-		padding-bottom: 5%;
+		margin-bottom: 5%;
+		padding-bottom: 4%;
 
 
 		border: 1px solid lighten($glass-color, 30%);
@@ -291,12 +314,14 @@ form
 			margin-bottom: 1%;
 
 			display: block;
+
 		}
 		input
 		{
 			margin: auto;
 			margin-bottom: 10%;
 			display: block;
+			width: 80%;
 			box-shadow: 0 0 10px 2px #333;
 			height: $font-base*1.5;
 			background-color: rgb(241, 241, 241);
@@ -305,6 +330,12 @@ form
 			color: black;
 			padding: 15px 20px;
 			text-align: center;
+			&#mobile_signup
+			{
+				box-shadow: none;
+				display: inline;
+				font-size: $font-base;
+			}
 		}
 		legend
 		{
@@ -318,13 +349,14 @@ form
 	div
 	{
 		text-align: center;
-		#submitButton
+		input[type="submit"]
 		{
 			margin: auto;
 			padding: 5% 15%;
 			background-color: opacify($primary-color, 1);
 			color: white;
 			transition: background-color 0.2s ease-out;
+			
 			&:hover
 			{
 				background-color: darken(opacify($primary-color-hover, 0.9), 20%);
@@ -353,34 +385,8 @@ form
 
 
 @import "_media_queries.scss";
+
 /*
-provide a way for interested users to sign-up for your e-newsletter.
-
-Following are the specific page functional requirements:
-
-    Main page with description of your business with its products and/or services
-    Contact Us page containing web form with a dropdown of reason for contacting (comment, question, complaining, etc.), first name, last name, email address, text area and any other fields you feel are appropriate; utilize required and data validation as necessary.
+    Contact Us page containing text area 
 	Link from your portfolio page to your new business page.
-	
-
-Session 4
-
-    Use figure boxes around main images with captions and alternative text
-    Add at least one border to a main image and/or text container
-    Use a border image or border with rounded corners
-	Apply a transform to an image in some way
-	
-Session 6
-
-    Utilize an HTML table perhaps to market your products and/or services.
-    Style your HTML table using th elements, row groups (thead, tfoot, tbody), and colgroups
-    Use rowspans and colspans where appropriate for you content and add a table caption
-
-Session 7
-    Add the attached javascript file "port_formsubmit.js" to your business project and reference it in the pages with your forms
-
-Session 8
-
-    Style and apply a hover transition over your web page navigation and/or anywhere else you think might be cool
-    Utilize an animation (i.e. keyframes) on your site in a unique, tasteful, innovative way (no spinning "ceiling dances", bouncing balls, or jumping foxes, bats, or butterflies ;))
 */

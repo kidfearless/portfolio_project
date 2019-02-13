@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="css/newsletter.css" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
 
@@ -29,9 +28,6 @@
 					<li>Contact<div class="mobile1">Us</div>
 					</li>
 				</a>
-				<a href="menu.html">
-					<li>Menu</li>
-				</a>
 			</ul>
 			<div class="rainbow"></div>
 		</nav>
@@ -46,16 +42,29 @@
 						<legend>Personal Information:</legend>
 						<div>
 							<label for="firstName">First Name:</label>
+							<br />
 							<input type="text" id="firstName" name="news_first_name" placeholder="John">
 						</div>
 						<div>
 							<label for="lastName">Last Name:</label>
+							<br />
 							<input type="text" id="lastName" name="news_last_name" placeholder="Doe">
 						</div>
 						<div>
 							<label for="email">Email Address:</label>
+							<br />
 							<input type="email" id="email" name="news_email" value="@gmail.com">
 						</div>
+						<div>
+							<label for="phoneNumber">Phone Number:</label>
+							<br />
+							<input type="tel" id="phoneNumber" name="contact_phone" placeholder="(208) 555-1234" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+						</div>
+						<div>
+							<label>Send Newsletters To My Phone Too!</label>
+							<input type="checkbox" id="mobile_signup" name="news_mobile" />
+						</div>
+
 					</fieldset>
 					<br />
 					<div>

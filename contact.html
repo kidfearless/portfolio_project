@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="css/contact.css" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
 
@@ -28,9 +27,6 @@
 						<a href="contact.html">
 							<li>Contact<div class="mobile1">Us</div></li>
 						</a>
-						<a href="menu.html">
-							<li>Menu</li>
-						</a>
 					</ul>
 					<div class="rainbow"></div>
 				</nav>
@@ -42,6 +38,7 @@
 				<h2>Contact Us</h2>
 				<form action="http://www.example.com/portfolio" method="POST">
 					<fieldset>
+						<legend>Personal Information</legend>
 						<div>
 							<label for="firstName">First Name:</label>
 							<br />
@@ -63,6 +60,9 @@
 							<input type="tel" id="phone" name="contact_phone" placeholder="(208) 555-1234"
 							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
 						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Experience Information</legend>
 						<div>
 							<label for="reason">Reason for contact:</label>
 							<br />
@@ -73,12 +73,12 @@
 								<option value="Question">Question</option>
 							</select>
 						</div>
+						<div>
+							<label for="contact_sat">How Satisfied Were You With Your Visit:</label>
+							<br />
+							<input type="range" name="contact_sat" min="1" max="5" />
+						</div>
 					</fieldset>
-					<div>
-						<label for="contact_sat">How Satisfied Were You With Your Visit:</label>
-						<br />
-						<input type="range" name="contact_sat" min="1" max="5" />
-					</div>
 					<br />
 					<div>
 						<input type="submit" value="Submit" name="contact_submit" />

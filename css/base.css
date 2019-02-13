@@ -21,7 +21,7 @@ div img {
   width: 50%;
 }
 
-#menu, #hours, #newsLetter, #contact {
+article p, #menu, #hours, #newsLetter, #contact {
   background-color: rgba(187, 187, 187, 0.396);
 }
 
@@ -85,9 +85,9 @@ label {
   height: 3.5em;
   background-color: rgba(53, 53, 53, 0.871);
   text-align: center;
-  -webkit-flex-basis: 25%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%;
   color: white;
   border-right: rgba(79, 79, 79, 0.965) 1px solid;
   -webkit-transition: background-color 0.2s ease-out;
@@ -131,7 +131,7 @@ h1 {
   color: white;
   margin: auto;
   margin-top: 15%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 h2 {
@@ -155,14 +155,39 @@ figure img {
 }
 
 figure img#shop {
+  padding: 30px;
   -webkit-filter: sepia(40%) grayscale(20%);
           filter: sepia(40%) grayscale(20%);
+  -webkit-transform: scaleY(0.8);
+     -moz-transform: scaleY(0.8);
+      -ms-transform: scaleY(0.8);
+       -o-transform: scaleY(0.8);
+          transform: scaleY(0.8);
 }
 
 figure figcaption {
+  border: 10px solid transparent;
+  -webkit-border-image: url(../images/border2.png) 30 stretch;
+     -moz-border-image: url(../images/border2.png) 30 stretch;
+       -o-border-image: url(../images/border2.png) 30 stretch;
+          border-image: url(../images/border2.png) 30 stretch;
   font-size: 0.7em;
-  text-align: right;
+  text-align: center;
   color: rgba(207, 207, 207, 0.965);
+  margin-top: -9em;
+  margin-left: 95%;
+  width: 4%;
+}
+
+article p {
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 5% 10%;
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 5px 5px 15px #111;
+  font-family: 'Lato', sans-serif;
 }
 
 #menu div img {
@@ -255,17 +280,21 @@ table tbody th {
   padding: 1%;
   text-align: left;
   width: 41.66667%;
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 table tbody td {
   text-align: center;
   padding: 1%;
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 table tfoot td {
   font-size: 0.7em;
   text-align: right;
   padding-right: 10%;
+  border: none;
+  border-collapse: collapse;
 }
 
 #newsLetter {
@@ -277,7 +306,8 @@ form fieldset {
   color: white;
   text-align: center;
   margin: 10%;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 4%;
   border: 1px solid rgba(255, 255, 255, 0.396);
 }
 
@@ -292,6 +322,7 @@ form fieldset input {
   margin: auto;
   margin-bottom: 10%;
   display: block;
+  width: 80%;
   -webkit-box-shadow: 0 0 10px 2px #333;
      -moz-box-shadow: 0 0 10px 2px #333;
           box-shadow: 0 0 10px 2px #333;
@@ -306,6 +337,14 @@ form fieldset input {
   text-align: center;
 }
 
+form fieldset input#mobile_signup {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  display: inline;
+  font-size: 1em;
+}
+
 form fieldset legend {
   border: 1px solid rgba(255, 255, 255, 0.396);
   margin: auto;
@@ -318,7 +357,7 @@ form div {
   text-align: center;
 }
 
-form div #submitButton {
+form div input[type="submit"] {
   margin: auto;
   padding: 5% 15%;
   background-color: #353535;
@@ -329,7 +368,7 @@ form div #submitButton {
   transition: background-color 0.2s ease-out;
 }
 
-form div #submitButton:hover {
+form div input[type="submit"]:hover {
   background-color: #1c1c1c;
 }
 
@@ -416,7 +455,7 @@ form div #submitButton:hover {
   h2 {
     font-size: 1.6em;
   }
-  fieldset div:nth-of-type(1), fieldset div:nth-of-type(2) {
+  fieldset #newsLetter div:nth-of-type(1), fieldset #newsLetter div:nth-of-type(2) {
     width: 49%;
     display: inline-block;
   }
@@ -484,9 +523,19 @@ form div #submitButton:hover {
 }
 
 @media only screen and (min-width: 900px) {
-  fieldset div:nth-of-type(1), fieldset div:nth-of-type(2), fieldset div:nth-of-type(3) {
+  #newsLetter fieldset div {
+    width: 24%;
     display: inline-block;
-    width: 32.33333%;
+  }
+  #newsLetter fieldset div input {
+    width: 70%;
+  }
+  #newsLetter fieldset div input[type="submit"] {
+    width: 20%;
+  }
+  form div input[type="submit"] {
+    padding: 2% 4%;
+    font-size: 1.5em;
   }
 }
 
@@ -1091,33 +1140,6 @@ form div #submitButton:hover {
 }
 
 /*
-provide a way for interested users to sign-up for your e-newsletter.
-
-Following are the specific page functional requirements:
-
-    Main page with description of your business with its products and/or services
-    Contact Us page containing web form with a dropdown of reason for contacting (comment, question, complaining, etc.), first name, last name, email address, text area and any other fields you feel are appropriate; utilize required and data validation as necessary.
+    Contact Us page containing text area 
 	Link from your portfolio page to your new business page.
-	
-
-Session 4
-
-    Use figure boxes around main images with captions and alternative text
-    Add at least one border to a main image and/or text container
-    Use a border image or border with rounded corners
-	Apply a transform to an image in some way
-	
-Session 6
-
-    Utilize an HTML table perhaps to market your products and/or services.
-    Style your HTML table using th elements, row groups (thead, tfoot, tbody), and colgroups
-    Use rowspans and colspans where appropriate for you content and add a table caption
-
-Session 7
-    Add the attached javascript file "port_formsubmit.js" to your business project and reference it in the pages with your forms
-
-Session 8
-
-    Style and apply a hover transition over your web page navigation and/or anywhere else you think might be cool
-    Utilize an animation (i.e. keyframes) on your site in a unique, tasteful, innovative way (no spinning "ceiling dances", bouncing balls, or jumping foxes, bats, or butterflies ;))
 */
