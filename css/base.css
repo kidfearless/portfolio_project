@@ -372,6 +372,11 @@ form div input[type="submit"]:hover {
   background-color: #1c1c1c;
 }
 
+form div #reason {
+  height: 2.5em;
+  width: 25%;
+}
+
 #contact {
   padding-bottom: 5%;
 }
@@ -535,6 +540,21 @@ form div input[type="submit"]:hover {
   }
   #newsLetter fieldset div input[type="submit"] {
     width: 20%;
+  }
+  #contact fieldset div {
+    width: 24%;
+    display: inline-block;
+  }
+  #contact fieldset div input {
+    width: 70%;
+  }
+  #contact fieldset div input[type="submit"] {
+    width: 20%;
+  }
+  #contact fieldset div input[type="range"] {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
   }
   form div input[type="submit"] {
     padding: 2% 4%;

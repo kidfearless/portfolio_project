@@ -362,6 +362,11 @@ form
 				background-color: darken(opacify($primary-color-hover, 0.9), 20%);
 			}
 		}
+		#reason
+		{
+			height: $font-base * 2.5 ;
+			width: 25%;
+		}
 	}
 }
 

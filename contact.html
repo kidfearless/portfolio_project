@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Page Title</title>
+	<title>Modern Internet Café</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
@@ -61,7 +61,7 @@
 							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset id="experienceField">
 						<legend>Experience Information</legend>
 						<div>
 							<label for="reason">Reason for contact:</label>
@@ -74,9 +74,14 @@
 							</select>
 						</div>
 						<div>
-							<label for="contact_sat">How Satisfied Were You With Your Visit:</label>
+							<label for="contact_sat">How Satisfying Was Your Visit:</label>
 							<br />
 							<input type="range" name="contact_sat" min="1" max="5" />
+						</div>
+						<br>
+						<div>
+							<label for="textExp">Write Your Comments Below:</label>
+							<textarea name="cust_exp" id="textExp" rows="4" cols="50"></textarea> 
 						</div>
 					</fieldset>
 					<br />

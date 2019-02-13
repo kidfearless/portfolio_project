@@ -213,6 +213,30 @@
 			}
 		}
 	}
+	#contact
+	{
+		fieldset
+		{
+			div
+			{
+				width: (100% / 4) - 1%;
+				
+				display: inline-block;
+				input
+				{					
+					width: 70%;
+					&[type="submit"]
+					{
+						width: 20%;
+					}
+					&[type="range"]
+					{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
 	form div
 	{
 		input[type="submit"]
