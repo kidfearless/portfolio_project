@@ -4,8 +4,8 @@ window.addEventListener("load",
 	function()
 	{
 		var myForm = document.forms[0];
-		myForm.elements.firstName.oninput = validateFirstName;
-		myForm.elements.lastName.oninput = validateLastName;
+		myForm.elements.contact_first_name.oninput = validateFirstName;
+		myForm.elements.contact_last_name.oninput = validateLastName;
 		myForm.elements.contact_email.oninput = validateEmail;
 		myForm.elements.contact_reason.onchange = validateReason;
 		myForm.elements.contact_submit.onclick = validateAll;
@@ -34,7 +34,7 @@ function validateEmail()
 
 function validateFirstName()
 {
-	var myFirstName = document.forms[0].elements.firstName;
+	var myFirstName = document.forms[0].elements.contact_first_name;
 	if (myFirstName.validity.valueMissing)
 	{
 		myFirstName.setCustomValidity("Please include your first name.");
@@ -47,7 +47,7 @@ function validateFirstName()
 
 function validateLastName()
 {
-	var myLastName = document.forms[0].elements.lastName;
+	var myLastName = document.forms[0].elements.contact_last_name;
 	if (myLastName.validity.valueMissing)
 	{
 		myLastName.setCustomValidity("Please include your last name.");
