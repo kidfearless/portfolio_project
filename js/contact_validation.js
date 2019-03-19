@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 window.addEventListener("load", 
 	function()
@@ -8,7 +8,21 @@ window.addEventListener("load",
 		myForm.elements.contact_last_name.oninput = validateLastName;
 		myForm.elements.contact_email.oninput = validateEmail;
 		myForm.elements.contact_reason.onchange = validateReason;
-		myForm.elements.contact_submit.onclick = validateAll;
+		myForm.elements.contact_submit.onclick = function()
+		{
+			validateFirstName();
+			validateLastName();
+			validateEmail();
+			validateReason(); 
+		};
+		myForm.onsubmit = function()
+		{
+			if(this.checkValidity())
+			{
+				alert("We appreciate your feedback, and will reach out to you shortly!");
+				return false;
+			}
+		};
 	}
 );
 
@@ -20,7 +34,7 @@ function validateEmail()
 	{
 		myEmail.setCustomValidity("Enter your email address");
 	}
-	/* Check to see if it's a valid range */
+	/* Check to see if it's a valid email */
 	else if( (/^(([a-zA-Z]+\d*)\.*)+@((\w+)\.?)+\.([a-zA-Z]){2,3}$/).test(myEmail.value) === false )
 	{
 		myEmail.setCustomValidity("Enter a valid email address");
@@ -71,10 +85,3 @@ function validateReason()
 	}
 }
 
-function validateAll()
-{
-	validateFirstName();
-	validateLastName();
-	validateEmail();
-	validateReason(); 
-}

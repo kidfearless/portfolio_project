@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 window.addEventListener("load", 
 	function()
@@ -7,7 +7,20 @@ window.addEventListener("load",
 		myForm.elements.news_first_name.oninput = validateFirstName;
 		myForm.elements.news_last_name.oninput = validateLastName;
 		myForm.elements.news_email.oninput = validateEmail;
-		myForm.elements.contact_submit.onclick = validateAll;
+		myForm.elements.news_submit.onclick = function()
+		{
+			validateFirstName();
+			validateLastName();
+			validateEmail();
+		};
+		myForm.onsubmit = function()
+		{
+			if(this.checkValidity())
+			{
+				alert("Check your inbox for more amazing deals!");
+				return false;
+			}
+		};
 	}
 );
 function validateEmail()
@@ -16,12 +29,12 @@ function validateEmail()
 	/* check for it's existence */
 	if(myEmail.validity.valueMissing === true)
 	{
-		myEmail.setCustomValidity("Enter your email address");
+		myEmail.setCustomValidity("Please enter your email address");
 	}
 	/* Check to see if it's a valid email */
 	else if( (/^(([a-zA-Z]+\d*)\.*)+@((\w+)\.?)+\.([a-zA-Z]){2,3}$/).test(myEmail.value) === false )
 	{
-		myEmail.setCustomValidity("Enter a valid email address");
+		myEmail.setCustomValidity("Please enter a valid email address");
 	}
 	/* reset the validity if the other checks pass */
 	else
@@ -54,11 +67,4 @@ function validateLastName()
 	{
 		myLastName.setCustomValidity("");
 	}
-}
-
-function validateAll()
-{
-	validateFirstName();
-	validateLastName();
-	validateEmail();
 }
